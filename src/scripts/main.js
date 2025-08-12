@@ -70,3 +70,17 @@ gsap.registerPlugin(ScrollTrigger);
     ease: "back.in"
    })
 
+ window.addEventListener("load", () => {
+   
+    gsap.to(".door-left", {
+      x: "-100%",
+      duration: 1.5,
+      ease: "power4.inOut"
+    });
+    gsap.to(".door-right", {
+      x: "100%",
+      duration: 1.5,
+      ease: "power4.inOut"
+    });
+
+  });

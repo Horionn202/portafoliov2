@@ -3,15 +3,39 @@ import Logo from "./Logo.astro";
 
 ---
 
-<nav class="flex justify-between bg-black text-white ">
+<nav class="flex flex-col md:flex-row justify-between bg-black text-white p-4">
+  <div class="flex justify-between items-center">
+    <Logo />
+    
+    <!-- Botón hamburguesa: visible solo en móviles -->
+    <button id="menu-btn" class="block md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
 
-     <Logo/>
-    <ul class="flex gap-6 text-2xl m-2 mt-3 mb-2 mr-5">
-        <li class="menu-item"><a href="">Home</a></li>
-        <li class="menu-item"><a href="">Proyectos</a></li>
-        <li class="menu-item"><a href="">Contacto</a></li>
-    </ul>
+  <!-- Menú escritorio: oculto en móvil -->
+  <ul class="hidden md:flex gap-6 text-2xl m-2 mt-3 mb-2 mr-5">
+    <li class="menu-item"><a href="">Home</a></li>
+    <li class="menu-item"><a href="">Proyectos</a></li>
+    <li class="menu-item"><a href="">Contacto</a></li>
+  </ul>
+
+  <!-- Menú móvil: oculto por defecto y solo aparece cuando se abre -->
+  <ul id="mobile-menu" class="hidden flex-col gap-4 mt-4 md:hidden text-lg text-center">
+    <li><a href="">Home</a></li>
+    <li><a href="">Proyectos</a></li>
+    <li><a href="">Contacto</a></li>
+  </ul>
 </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
 
+  menuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>
