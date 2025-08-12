@@ -1,0 +1,38 @@
+---
+import Logo from "../assets/img/foto.png"
+
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<section class="flex flex-col md:flex-row items-center justify-around min-h-screen bg-black px-8 md:px-20">
+  <!-- Texto -->
+  <div class="text-center md:text-left max-w-xl">
+    <h1 class="hero-tittle text-7xl font-bold text-white">Hola, soy <span class="hero-tittle block">Rafael Deza</span></h1>
+    <p class="parrafo text-4xl text-gray-300 mt-5 mb-3">
+      Estudiante de Diseño y Desarrollo de software en Certus
+    </p>
+    
+    <!-- Botones e íconos -->
+    <div class=" flex items-center gap-4 mt-6">
+      <a href="#" class="botones p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+        <i class="iconos fab fa-github text-white text-xl"></i>
+      </a>
+      <a href="#" class="botones p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+        <i class="iconos fab fa-linkedin-in text-white text-xl"></i>
+      </a>
+      <a href="#" class="botones p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+        <i class="iconos fas fa-envelope text-white text-xl"></i>
+      </a>
+      <a href="#" class="botones px-5 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition animate-bounce">
+        Descargar CV
+      </a>
+    </div>
+  </div>
+
+  <!-- Imagen -->
+  <div class="mt-8 md:mt-0 foto">
+    <img src={Logo.src} alt="Rafael Deza" class="max-w-sm w-full">
+  </div>
+</section>
+
+
+<script src="../scripts/main.js"></script>
