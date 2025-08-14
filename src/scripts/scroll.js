@@ -1,13 +1,13 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 window.addEventListener("DOMContentLoaded", () => {
   const isMobile = window.innerWidth <= 768; // detecta móviles/tablets
 
   if (!isMobile) {
+    gsap.registerPlugin(ScrollTrigger);
 
+    // ----- Animaciones solo en escritorio -----
     const tituloAnim = gsap.from(".pro-tittle", {
       y: 50,
       opacity: 0,
@@ -202,5 +202,6 @@ window.addEventListener("DOMContentLoaded", () => {
         toggleActions: "play reverse play reverse",
       },
     });
-  } 
+  }
+  // else vacío => no animaciones en móvil
 });
