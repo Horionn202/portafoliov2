@@ -5,39 +5,43 @@ import video3 from "../assets/videos/video3.mp4"
 
 
 ---
-<section id="Proyecto" class="bg-gray-100 py-12">
+<section id="Proyecto" class="bg-gray-900 py-12">
   <div class="container mx-auto px-4">
-    <h2 class="pro-tittle text-3xl font-bold mb-8 text-center">Proyectos</h2>
+    <h2 class="pro-tittle text-3xl font-bold mb-8 text-center text-white">Proyectos</h2>
     
     <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       <!-- Proyecto 1 -->
-      <div class=" bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-       <video src={video1} controls muted autoplay loop></video>
+      <div class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <video src={video1} controls muted autoplay loop></video>
         <div class="p-4">
-          <h3 class="text-xl font-semibold text-center mb-2">Proyecto 1</h3>
-          <p class="text-gray-600 text-sm">Descripción breve del proyecto 1 para explicar de qué trata.</p>
+          <h3 class="text-xl font-semibold text-center mb-2">Sistema de Ventas</h3>
+          <p class="text-gray-600 text-sm text-center">Sistema de gestión ventas y almacen de tienda.</p>
+
         </div>
       </div>
 
       <!-- Proyecto 2 -->
-      <div class=" bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-      <video src={video2} controls muted autoplay loop></video>
+      <div class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <video src={video2} controls muted autoplay loop></video>
         <div class="p-4">
-          <h3 class="text-xl text-center font-semibold mb-2">Proyecto 2</h3>
-          <p class="text-gray-600 text-sm">Descripción breve del proyecto 2 para explicar de qué trata.</p>
+          <h3 class="text-xl text-center font-semibold mb-2">Ecommer de Perisfericos</h3>
+          <p class="text-gray-600 text-sm text-center"> sistema de autenticación de usuarios, pasarela de pago y base de datos</p>
+      
         </div>
       </div>
 
       <!-- Proyecto 3 -->
-      <div class=" bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+      <div class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
         <video src={video3} controls muted autoplay loop></video>
         <div class="p-4">
-          <h3 class="text-xl font-semibold text-center mb-2">Proyecto 3</h3>
-          <p class="text-gray-600 text-sm">Descripción breve del proyecto 3 para explicar de qué trata.</p>
+          <h3 class="text-xl font-semibold text-center mb-2">Proyecto de autocine</h3>
+          <p class="text-gray-600 text-sm text-center">Demo de pagina para un autocine + Backend</p>
+
         </div>
       </div>
-      
-      <!-- Puedes añadir más proyectos aquí -->
+
+
+
     </div>
   </div>
 </section>
