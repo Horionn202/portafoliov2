@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.cliclab.studio)",
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(Get-Content \"C:\\\\Users\\\\rafae\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-rafae-Documents-GitHub-portafoliov2\\\\4a1a248f-7bd4-4470-adeb-8a5d3f062143\\\\tasks\\\\b2paors06.output\" -Wait)",
+      "Bash(Select-String --line-buffered \"Local|error|Error|failed\")",
+      "Bash(Start-Sleep -Seconds 5)",
+      "Bash(Get-Content \"C:\\\\Users\\\\rafae\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-rafae-Documents-GitHub-portafoliov2\\\\4a1a248f-7bd4-4470-adeb-8a5d3f062143\\\\tasks\\\\b2paors06.output\")"
+    ]
+  }
+}
